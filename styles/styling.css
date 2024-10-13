@@ -1,0 +1,38 @@
+/* styles/styling.css */
+body {
+    background-color: #000000;
+}
+.videoBackground {
+    position: fixed;          /* Fixed to ensure it stays as a background */
+    top: 0;
+    left: 0;
+    width: 100%;              
+    height: 100%;           
+    object-fit: cover;     
+    z-index: -1;              
+}
+.scribe {
+    color: rgb(3, 179, 255);
+}
+h1 {
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+
+.upload {
+    color: aliceblue;
+    padding-top: 5%;
+}
+
+
+
+.plus-icon {
+    margin-left: 50%;
+    margin-top: 2rem;
+}
+
+.upload-button {
+    margin-left: 45vw;
+    margin-top: 30vh;
+}
