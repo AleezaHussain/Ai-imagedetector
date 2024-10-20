@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function UploadImage({ onUpload }) {
+export default function UploadImage({ onUpload, onButtonClick }) {
   const [uploading, setUploading] = useState(false);
 
   const handleImageUpload = async (e) => {
@@ -56,7 +56,13 @@ export default function UploadImage({ onUpload }) {
 
   return (
     <div>
-      <input type="file" accept="image/*" onChange={handleImageUpload} />
+      <input
+        type="file"
+        accept="image/*"
+        style={{ display: 'none' }}
+        ref={onButtonClick}
+        onChange={handleImageUpload}
+      />
       {uploading && <p>Uploading...</p>}
     </div>
   );
